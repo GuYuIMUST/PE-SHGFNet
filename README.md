@@ -60,8 +60,6 @@ conda activate pe-shgfnet
 pip install -r requirements.txt
 ```
 
-Recommended dependencies include PyTorch, NumPy, pandas, scikit-learn, SciPy, SimpleITK, NiBabel, pydicom, PyYAML, matplotlib, and tqdm. Pin the exact versions used for the final experiments.
-
 ## Preprocessing
 This work does **not** introduce a new data-preprocessing pipeline. CTPA and EHR data are prepared using established procedures from PENet and RadFusion, respectively.
 
