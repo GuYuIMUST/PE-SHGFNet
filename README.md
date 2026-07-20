@@ -142,10 +142,6 @@ Reported metrics include AUROC, accuracy, F1 score, sensitivity, specificity, PP
 }
 ```
 
-Before publication, add:
-
-> Manuscript under review. Citation information will be updated after publication.
-
 ## Related Work
 
 PE-SHGFNet extends our previous multimodal PE framework:
