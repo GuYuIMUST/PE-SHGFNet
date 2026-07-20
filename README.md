@@ -54,9 +54,6 @@ The dataset is not redistributed in this repository. Please obtain it through th
 ## Installation
 
 ```bash
-git clone https://github.com/<YOUR_USERNAME>/PE-SHGFNet.git
-cd PE-SHGFNet
-
 conda create -n pe-shgfnet python=3.10 -y
 conda activate pe-shgfnet
 
