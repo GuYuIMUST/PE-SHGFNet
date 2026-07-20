@@ -106,10 +106,10 @@ Main settings reported in the manuscript:
 | Warm-up | Linear warm-up |
 | Image input | `1 × 32 × 192 × 192` |
 
-## Evaluation
+## Testing
 
 ```bash
-python evaluate.py
+python test.py
 ```
 
 Reported metrics include AUROC, accuracy, F1 score, sensitivity, specificity, PPV, and NPV.
