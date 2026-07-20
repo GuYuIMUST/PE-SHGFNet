@@ -146,14 +146,6 @@ Reported metrics include AUROC, accuracy, F1 score, sensitivity, specificity, PP
 | ✓ | ✓ |  | ✓ | 0.845 | 0.796 | 0.759 |
 | ✓ | ✓ | ✓ | ✓ | 0.895 | 0.852 | 0.842 |
 
-## Pretrained Models
-
-| Model | Checkpoint | Status |
-|---|---|---|
-| Image branch | To be added | CasViT + PTBE + PE-ASPP |
-| EHR branch | To be added | PEDANet |
-| PE-SHGFNet | To be added | Full multimodal model |
-
 ## Reproducibility
 
 The public release should include:
