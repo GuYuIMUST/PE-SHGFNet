@@ -65,37 +65,6 @@ data/
 └── metadata.csv
 ```
 
-## Repository Structure
-
-```text
-PE-SHGFNet/
-├── assets/
-│   └── framework.png
-├── configs/
-│   ├── image.yaml
-│   ├── ehr.yaml
-│   └── multimodal.yaml
-├── datasets/
-├── models/
-│   ├── casvit_3d.py
-│   ├── ptbe.py
-│   ├── pe_aspp.py
-│   ├── pedanet.py
-│   ├── hypergraph_fusion.py
-│   └── pe_shgfnet.py
-├── preprocessing/
-├── utils/
-├── train_image.py
-├── train_ehr.py
-├── train_multimodal.py
-├── evaluate.py
-├── requirements.txt
-├── LICENSE
-└── README.md
-```
-
-Update this section after the final code structure is fixed.
-
 ## Installation
 
 ```bash
@@ -264,10 +233,3 @@ This repository is intended for academic research only. PE-SHGFNet is not a cert
 ## Acknowledgements
 
 We thank the creators of the RadFusion dataset and the developers of the open-source libraries used in this work.
-
-## Contact
-
-- **Wei Zhang:** `zhangwei@stu.imust.edu.cn`
-- **Yu Gu:** `guyu2010023@imust.edu.cn`
-
-Please use GitHub Issues for installation problems, reproducibility questions, and bug reports.
