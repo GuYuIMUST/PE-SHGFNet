@@ -2,9 +2,6 @@
 Official implementation of PE-SHGFNet, a specificity-enhanced hypergraph fusion network for multimodal pulmonary embolism diagnosis using 3D CTPA and structured EHR data.
 **PE-SHGFNet: A Specificity-Enhanced Hypergraph Fusion Network for Multimodal Pulmonary Embolism Diagnosis**
 
-> **Paper:** *Multimodal Computer-Aided Diagnosis of Pulmonary Embolism via a Specificity-Enhanced Vision Transformer and Higher-Order Hypergraph Fusion*  
-> **Status:** Code and documentation are being prepared for public release.
-
 ## Overview
 
 PE-SHGFNet contains three main components:
