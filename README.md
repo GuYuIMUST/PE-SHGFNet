@@ -136,8 +136,6 @@ Reported metrics include AUROC, accuracy, F1 score, sensitivity, specificity, PP
 |---|---:|---:|---:|---:|---:|---:|---:|
 | PE-SHGFNet | 0.975 | 0.925 | 0.929 | 0.950 | 0.900 | 0.905 | 0.947 |
 
-Update these values if the final paper, released split, or checkpoint differs from the current manuscript.
-
 ### Image branch ablation
 
 | CasViT | Residual | PTBE | PE-ASPP | AUROC | Accuracy | F1 |
