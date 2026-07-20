@@ -66,27 +66,21 @@ pip install -r requirements.txt
 Recommended dependencies include PyTorch, NumPy, pandas, scikit-learn, SciPy, SimpleITK, NiBabel, pydicom, PyYAML, matplotlib, and tqdm. Pin the exact versions used for the final experiments.
 
 ## Preprocessing
+This work does **not** introduce a new data-preprocessing pipeline. CTPA and EHR data are prepared using established procedures from PENet and RadFusion, respectively.
 
-### CTPA
+### CTPA Preparation
 
-```bash
-python preprocessing/preprocess_ctpa.py \
-  --input_dir <RAW_CTPA_DIR> \
-  --output_dir <PROCESSED_CTPA_DIR> \
-  --metadata <METADATA_FILE>
-```
+CTPA preprocessing follows the pipeline used in **PENet**. The PENet-based procedure is used to prepare the volumetric CTPA inputs for the image branch. No additional preprocessing method is claimed as a contribution of PE-SHGFNet.
 
-The reported preprocessing pipeline includes intensity normalization, extraction of 32 consecutive slices, resizing, training-time random cropping, rotation, and depth perturbation.
+Users should follow the corresponding PENet preprocessing procedure and then provide the processed CTPA paths in the project configuration files. Any repository-specific data-loading instructions will be documented in `data/README.md`.
 
-### EHR
+### EHR Preparation
 
-```bash
-python preprocessing/preprocess_ehr.py \
-  --input_file <RAW_EHR_FILE> \
-  --output_file <PROCESSED_EHR_FILE>
-```
+Structured EHR data are prepared according to the official **RadFusion** processing and feature organization. PE-SHGFNet does not introduce additional handcrafted feature engineering or a separate EHR preprocessing pipeline.
 
-All EHR variables should be restricted to the predefined prediction time window. Post-diagnosis variables must be excluded to prevent information leakage.
+Users should obtain the RadFusion EHR data and official split information through the original release, then configure the corresponding file paths in the project configuration files.
+
+To ensure a fair evaluation, the patient-level train, validation, and test splits should remain consistent with the RadFusion protocol.
 
 ## Training
 
