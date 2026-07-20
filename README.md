@@ -86,21 +86,13 @@ To ensure a fair evaluation, the patient-level train, validation, and test split
 
 ### Image branch
 
-```bash
-python train_image.py --config configs/image.yaml
-```
-
-### EHR branch
+The image branch, EHR branch, and multimodal fusion model are trained through a unified training script:
 
 ```bash
-python train_ehr.py --config configs/ehr.yaml
+python train.py
 ```
 
-### Full multimodal model
-
-```bash
-python train_multimodal.py --config configs/multimodal.yaml
-```
+Before training, update the dataset paths, output directory, and other experiment settings in `train.py` according to the released code.
 
 Main settings reported in the manuscript:
 
@@ -139,19 +131,6 @@ Reported metrics include AUROC, accuracy, F1 score, sensitivity, specificity, PP
 | ✓ | ✓ | ✓ |  | 0.867 | 0.815 | 0.810 |
 | ✓ | ✓ |  | ✓ | 0.845 | 0.796 | 0.759 |
 | ✓ | ✓ | ✓ | ✓ | 0.895 | 0.852 | 0.842 |
-
-## Reproducibility
-
-The public release should include:
-
-- fixed random seeds;
-- exact patient-level data splits;
-- configuration files;
-- package versions;
-- preprocessing parameters;
-- checkpoint-selection criteria;
-- hardware information;
-- repeated-run results and confidence intervals.
 
 ## Citation
 
