@@ -26,12 +26,7 @@ PE-SHGFNet contains three main components:
                                        ├─► PE-HypergraphFusion ─► Classifier
 EHR data ─────────► PEDANet ──────────┘
 ```
-
-After adding the framework figure to the repository:
-
-```markdown
-![Framework of PE-SHGFNet](assets/framework.png)
-```
+<img width="927" height="336" alt="overall framework" src="https://github.com/user-attachments/assets/d8cb74cb-28a4-49ce-b4ec-f0eafc225bac" />
 
 ## Main Contributions
 
