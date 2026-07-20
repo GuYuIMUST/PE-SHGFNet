@@ -109,9 +109,7 @@ Main settings reported in the manuscript:
 ## Evaluation
 
 ```bash
-python evaluate.py \
-  --config configs/multimodal.yaml \
-  --checkpoint <CHECKPOINT_PATH>
+python evaluate.py
 ```
 
 Reported metrics include AUROC, accuracy, F1 score, sensitivity, specificity, PPV, and NPV.
