@@ -51,20 +51,6 @@ Experiments are conducted on the public **RadFusion** dataset.
 
 The dataset is not redistributed in this repository. Please obtain it through the official RadFusion release and comply with its license and data-use requirements.
 
-Suggested data structure:
-
-```text
-data/
-├── images/
-├── ehr/
-│   └── ehr_features.csv
-├── splits/
-│   ├── train.csv
-│   ├── val.csv
-│   └── test.csv
-└── metadata.csv
-```
-
 ## Installation
 
 ```bash
